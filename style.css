@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap');
 
 * {
     margin: 0;
     outline: none;
     font-family: 'Comfortaa', cursive;
+    font-weight: 500;
     color: #fff;
 }
 
@@ -36,6 +37,18 @@ a {
 
 .header__nav>a {
     margin-left: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.header__email{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__email>p{
+    font-weight: 300;
 }
 
 .header__button {
@@ -50,6 +63,8 @@ a {
 }
 .header__button>p{
     color: black;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .main {
