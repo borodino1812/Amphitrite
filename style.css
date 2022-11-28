@@ -3,13 +3,13 @@
 * {
     margin: 0;
     outline: none;
-    font-family: 'Comfortaa', cursive;
     font-weight: 500;
     color: #fff;
 }
 
 body {
     background-color: black;
+    font-family: 'Comfortaa', cursive;
 }
 
 a {
@@ -61,10 +61,11 @@ a {
     background-color: #fff;
     align-items: center;
 }
-.header__button>p{
-    color: black;
-    font-weight: 700;
-    text-transform: uppercase;
+.header__button>span{
+    color: #17261e;
+    font-weight: 300;
+    /*text-transform: uppercase;*/
+    font-size: 18px;
 }
 
 .main {
