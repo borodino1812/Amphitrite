@@ -2,10 +2,10 @@
 
 * {
     margin: 0;
-    outline: none;
     font-family: 'Comfortaa', cursive;
     font-weight: 500;
     color: #fff;
+    outline: none;
 }
 
 body {
@@ -23,7 +23,7 @@ a {
     backdrop-filter: blur(1.7px);
 }
 
-.header__menu {
+.header-menu {
     display: flex;
     justify-content: space-around;
     gap: 30px;
@@ -31,27 +31,21 @@ a {
     height: 10vh;
 }
 
-.header__nav {
-    display: flex;
-}
-
-.header__nav a {
+.nav-link {
     margin-left: 10px;
     text-transform: uppercase;
     font-weight: 500;
 }
 
-.header__email{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.header__email p{
+.link {
     font-weight: 300;
 }
 
-.header__button {
+.header-email p {
+    font-weight: 300;
+}
+
+.header-button {
     width: 18em;
     height: 3em;
     border: 0;
@@ -61,22 +55,81 @@ a {
     background-color: #fff;
     align-items: center;
 }
-.header__button p{
+
+.header-button p {
     color: black;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.main {
+.main-screen {
     width: 100%;
     height: 110vh;
     background-image: url(/img/backgroung_image.jpg);
     background-size: cover;
-    display: flex;
+    display: grid;
     align-items: center;
 }
 
-.main__nav {
+.logo {
+    font-size: 100pt;
+    padding-bottom: 130px;
+}
+
+.text-above-cards {
+    display: flex;
+    align-items: flex-end;
+    font-weight: 700;
+    font-size: 37pt;
+    text-transform: uppercase;
+}
+
+.second-screen {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
+    display: grid;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(118, 118, 118);
+    border-radius: 1.5em;
+    padding: 15px;
+    border: 2, #fff;
+    border-style: solid;
+}
+
+
+.card-item {
+    height: 200px;
+}
+
+.card-text {
+    color: #7df706;
+    margin-bottom: 10px;
+}
+
+.card-img {
+    width: 48px;
+    padding-bottom: 50%;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 10vh;
+}
+
+.copyright {
+    font-weight: 300;
 }
