@@ -124,7 +124,7 @@ a {
     background-color: #1e2625;
 }
 .card-dark-green:hover {
-    box-shadow: 0px 0px 25px 15px rgb(255, 255, 255);
+    box-shadow: 0px 0px 25px 10px rgb(196, 196, 252);
     transition: .2s ease-in;
     z-index: 1;
     transform: scale(1.03);
@@ -135,7 +135,7 @@ a {
 }
 
 .card-green:hover {
-    box-shadow: 0px 0px 25px 15px rgb(255, 255, 255);
+    box-shadow: 0px 0px 25px 10px rgb(196, 196, 252);
     transition: .2s ease-in;
     z-index: 1;
     transform: scale(1.03);
@@ -146,7 +146,7 @@ a {
 }
 
 .card-white:hover {
-    box-shadow: 0px 0px 25px 15px rgb(255, 0, 0);
+    box-shadow: 0px 0px 25px 10px rgb(196, 196, 252);
     transition: .2s ease-in;
     z-index: 1;
     transform: scale(1.03);
