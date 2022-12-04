@@ -1,0 +1,19 @@
+body {
+    font-family: 'Comfortaa', Arial, sans-serif;
+    color: white;
+    background-color: #0d0d0d;
+}
+
+.site-navigation{
+
+}
+.main-navigation{
+    display: flex;
+    background-color: transparent;
+}
+.background{
+    background-image: url("img/bg.png") ;
+    min-height: 110vh;
+    width: 100vw;
+    background-size: cover;
+}
