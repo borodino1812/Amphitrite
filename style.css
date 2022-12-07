@@ -1,18 +1,48 @@
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'Comfortaa', Arial, sans-serif;
     color: white;
     background-color: #0d0d0d;
-    background-image: url("img/bgph.jpg");
-    background-position: top center;
-    background-repeat: no-repeat;
 
-    background-size: auto 100vh  ;
+
+}
+
+.main-header{
+
 }
 
 .site-navigation{
+    list-style: none;
+    display: flex;
+    background-color: transparent;
 
 }
 .main-navigation{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    min-height: 100px;
     display: flex;
     background-color: transparent;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
+.site-controls{
+    list-style: none;
+    display: flex;
+
+}
+
+.main-content{
+}
+
+.background{
+
+    min-height: 100vh;
+            background-image: url(img/bgph.jpg );
+    background-size: cover;
+    display: flex;
+    align-items: start;
+    }
