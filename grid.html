@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        .container{
+            width: 1200px;
+            height: 900px;
+            box-sizing: border-box;
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows:1fr 1fr;
+            grid-gap: 30px;
+        }
+
+        .item{
+            border-radius: 30px;
+            /*box-sizing: border-box;*/
+            padding: 10px;
+            background: linear-gradient(to top, #152022, #0e0f10);
+        );
+        }
+
+        .item-1{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        .item-2{
+            /*height: 400px;*/
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        .item-3{
+            /*height: 400px;*/
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="container">
+        <li class="item item-1">1</li>
+        <li class="item item-2">2</li>
+        <li class="item item-3">3</li>
+    </ul>
+</body>
+</html>
