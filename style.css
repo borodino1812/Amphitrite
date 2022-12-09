@@ -6,8 +6,11 @@ body {
     background-color: #0d0d0d;
 }
 
-a{
+a {
     text-decoration: none;
+}
+a:visited {
+    color: white;
 }
 
 .main-header{
@@ -126,11 +129,6 @@ a{
 }
 
 
-.services-item a:visited{
-    color: white;
-;
-}
-
 .services-title{
     margin: 0;
     padding: 0;
@@ -148,6 +146,8 @@ a{
 }
 
 .works-list{
+    margin: 0;
+    padding: 0;
     display: grid;
     list-style: none;
     min-height: 900px;
@@ -158,11 +158,15 @@ a{
 
 .works-item{
     /*box-sizing: border-box;*/
-    padding: 15px 15px 11px;
+    /*padding: 15px 15px 11px;*/
     border-radius: 20px;
     /*width: 410px;*/
     /*height: 900px;*/
     background: linear-gradient(-177deg, #152022, #0e0f10);
+}
+
+.works-item-wrapper{
+    padding: 15px 15px 11px;
 }
 
 .works-list .item-1{
