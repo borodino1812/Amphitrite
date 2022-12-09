@@ -18,55 +18,76 @@
             <img src="img/logo.png" alt="Логотип проекта">
         </a>
         <nav class="main-navigation">
-            <div class="navigation-container">
-                <ul class="site-navigation">
-                    <li>Услуги</li>
-                    <li>Портфолио</li>
-                    <li>Контакты</li>
-                    <li>О нас</li>
-                </ul>
-                <ul class="site-controls">
-                    <li><a class="header-email">aeddgynvael@icloud.com</a></li>
-                    <li><button class="button header-button"></button></li>
-                </ul>
+            <div class="site-navigation-wrapper">
+                <div class="container">
+                    <ul class="site-navigation">
+                        <li>Услуги</li>
+                        <li>Портфолио</li>
+                        <li>Контакты</li>
+                        <li>О нас</li>
+                    </ul>
+                    <ul class="site-controls">
+                        <li><a class="header-email">aeddgynvael@icloud.com</a></li>
+                        <li><button class="button header-button"></button></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
-
-   <!-- <div class="wrapper-bg">
-    <div class="background"></div>
-</div>-->
-    <main class="main-content">
+    <main class="main-content container">
         <h1 class="visually-hidden">Проект Amphitrite</h1>
         <section class="services">
             <h2 class="visually-hidden">Услуги</h2>
             <h3>Изящность минимализма</h3>
             <ul class="services-list">
-                <li class="services-item">Дизайн и разработка сайтов</li>
-                <li class="services-item">Иллюстации и арт-проекты</li>
-                <li class="services-item">Брендинг</li>
+                <li class="services-item">
+                    <a class="services-content" href="#">
+                        <h4 class="services-title">Дизайн и<br> разработка сайтов</h4>
+                    </a>
+                </li>
+                <li class="services-item">
+                    <div class="services-content">
+                        <h4 class="services-title">Иллюстации<br> и арт-проекты</h4>
+                    </div>
+                </li>
+                <li class="services-item">
+                    <div class="services-content">
+                        <h4 class="services-title">Брендинг</h4>
+                    </div>
+                </li>
             </ul>
         </section>
+
         <section class="works">
             <h2 class="visually-hidden">Примеры работ</h2>
             <h3>Искусность наших работ скажет все за нас</h3>
             <ul class="works-list">
                 <li class="works-item">
-                    <span>Дизайн и разработка · 2022</span>
-                    <span>Плантация кофе в Эфиопии</span>
+                    <div class="works-content-large">
+                        <img class="works-img" src="img/coffee-img.png" alt="Плантация кофе в Эфиопии">
+                        <span class="works-type">Дизайн и разработка · 2022</span>
+                        <span class="works-title">Плантация кофе в Эфиопии</span>
+                    </div>
                 </li>
                 <li class="works-item">
-                    <span>Дизайн и разработка · 2022</span>
-                    <span>Строительство эко-коттеджей в Норвегии</span>
+                    <div class="works-content">
+                        <img src="" alt="">
+                        <span class="works-type">Дизайн и разработка · 2022</span>
+                        <span class="works-title">Строительство эко-коттеджей в Норвегии</span>
+                    </div>
                 </li>
                 <li class="works-item">
-                    <span>Дизайн и разработка · 2022</span>
-                    <span>Парфюмерный дом Caron</span>
+                    <div class="works-content">
+                        <img src="" alt="">
+                        <span class="works-type">Дизайн и разработка · 2022</span>
+                        <span class="works-title">Парфюмерный дом Caron</span>
+                    </div>
                 </li>
             </ul>
         </section>
     </main>
+
     <footer class="main-footer">
         <a class="footer-email">aeddgynvael@icloud.com</a>
         <ul class="footer-social">
