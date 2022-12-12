@@ -14,11 +14,10 @@ a, a:visited {
 /*    color: white;*/
 /*}*/
 
-.main-header{
-    font-weight: 400;
-    display: grid;
-    font-size: 20px;
-    letter-spacing: -0.5px;
+.main-screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     width: 100%;
     background-image: url(img/bgph.jpg );
@@ -26,47 +25,63 @@ a, a:visited {
     background-size: cover;
 }
 
-.main-navigation{
-    width: 100%;
-    position: fixed;
-    /*display: flex;*/
-    background-color: transparent;
-    /*flex-direction: column;*/
-    /*align-items: center;*/
-    backdrop-filter: blur(5px);
-}
-
-.container{
-    margin: 0 auto;
-    padding: 0 40px;
-    width: 1290px;
-}
-
-.site-navigation-wrapper .container{
+.main-header{
     display: flex;
-    min-height: 100px;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    align-self: start;
+    min-height: 80px;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -0.5px;
+
+}
+
+.header-wrapper{
+    display: flex;
+    height: 100%;
     justify-content: space-between;
     align-items: center;
 }
 
-.main-header-logo{
-    align-self: center ;
-    justify-self: center;
-    width: 555px;
-    height: 86px;
-    order: 1;
-}
 
 .site-navigation{
-    list-style: none;
     display: flex;
-    background-color: transparent;
+    list-style: none;
     padding: 0;
 
 }
 
+.container{
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 1290px;
+}
+
+
+
+
 .site-navigation li{
     margin-right: 20px;
+}
+
+.header-email{
+    margin-right: 20px;
+}
+
+.header-button{
+    min-height: 50px;
+    width: 207px;
+    background-color: #ffffff;
+    color: #17261e;
+    border-radius: 20px;
+    font-size: 20px;
+    letter-spacing: -0.5px;
+    font-weight: 200;
+
 }
 
 
@@ -74,10 +89,10 @@ a, a:visited {
 .site-controls{
     list-style: none;
     display: flex;
-
-}
-
-.main-content{
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 .visually-hidden {
@@ -105,8 +120,8 @@ a, a:visited {
 }
 
 .services-list{
-    list-style: none;
     display: flex;
+    list-style: none;
     justify-content: space-between;
     margin: 0;
     padding: 0;
@@ -206,9 +221,40 @@ a, a:visited {
 
 
 .main-footer{
-    min-height: 100px;
+    /*background-color: #152022;*/
+    margin-top: 250px;
+
+    /*min-height: 80px;*/
+    width: 100%;
 
 }
+
+.footer-wrapper{
+    display: flex;
+    align-items: center;
+    border-top: 2px solid white;
+    min-height: 80px;
+    }
+
+.footer-social{
+    display: flex;
+    list-style: none;
+}
+
+.footer-site-navigation{
+    margin: 0 auto;
+    display: flex;
+    list-style: none;
+}
+
+.footer-site-navigation li{
+    margin-right: 20px;
+}
+
+.copyright{
+    /*display: flex;*/
+}
+
 
 
 
