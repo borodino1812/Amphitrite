@@ -10,10 +10,25 @@ a, a:visited {
     text-decoration: none;
     color: white;
 }
-/*a:visited {*/
-/*    color: white;*/
-/*}*/
 
+.site-navigation a{
+    position: relative;
+}
+
+.site-navigation a::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.35s;
+}
+
+.site-navigation a:hover::before{
+    width: 100%;
+}
 
 .main-header{
     display: flex;
@@ -26,8 +41,8 @@ a, a:visited {
     background-size: cover;
     height: 100vh;
     width: 100%;
-
 }
+
 .top-header{
     position: fixed;
     top: 0;
@@ -35,17 +50,16 @@ a, a:visited {
     backdrop-filter: blur(5px);
     font-weight: 400;
     font-size: 20px;
-    /*min-height: 80px;*/
 }
+
 .main-navigation-wrapper{
     /*height: 100%;*/
 }
+
 .navigation-wrapper .container{
     display: flex;
     justify-content: space-between;
-    /*height: 100%;*/
 }
-
 
 .site-navigation{
     display: flex;
@@ -55,7 +69,6 @@ a, a:visited {
     padding: 0 ;
     flex-wrap: wrap;
 
-
 }
 
 .container{
@@ -63,9 +76,6 @@ a, a:visited {
     padding: 0 10px;
     width: 1290px;
 }
-
-
-
 
 .site-navigation li{
     padding: 30px 0;
@@ -81,10 +91,12 @@ a, a:visited {
     font-size: 20px;
     letter-spacing: -0.5px;
     font-weight: 200;
-
+    border: 0;
 }
 
-
+.header-button:hover{
+    color: #1c996b;
+}
 
 .site-controls{
     list-style: none;
@@ -140,14 +152,17 @@ a, a:visited {
     display: flex;
     height: 100%;
     flex-direction: column;
-    justify-content: end;
+    justify-content: space-between;
     box-sizing: border-box;
     padding: 40px;
-    /*min-height: 350px;*/
     border-radius: 60px;
     background: linear-gradient(to top, #152022, #0e0f10);
 }
 
+.services-content:hover{
+    box-shadow: 0 0 15px white;
+    transition: 0.25s;
+}
 
 .services-title{
     margin: 0;
@@ -158,6 +173,16 @@ a, a:visited {
 
 }
 
+.icon-circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #152022;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
 .works h3{
     margin: 0 0 60px;
     font-size: 60px;
@@ -166,23 +191,24 @@ a, a:visited {
 }
 
 .works-list{
-    margin: 0;
-    padding: 0;
     display: grid;
-    list-style: none;
     min-height: 900px;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 30px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .works-item{
-    /*box-sizing: border-box;*/
-    /*padding: 15px 15px 11px;*/
     border-radius: 20px;
-    /*width: 410px;*/
-    /*height: 900px;*/
     background: linear-gradient(-177deg, #152022, #0e0f10);
+}
+
+.works-item:hover{
+    box-shadow: 0 0 10px white;
+    transition: 0.25s;
 }
 
 .works-item-wrapper{
@@ -212,55 +238,96 @@ a, a:visited {
 
 .works-img{
     margin-bottom: 5px;
+    border-radius: 10px;
 }
+
 .works-type{
     display: block;
     font-size: 14px;
     margin-bottom: 8px;
 }
+
 .works-title{
     display: block;
     font-size: 18px;
 }
 
-
 .main-footer{
-    /*background-color: #152022;*/
     margin-top: 250px;
-
-    /*min-height: 80px;*/
     width: 100%;
-
 }
 
 .footer-wrapper{
     display: flex;
+    justify-content: space-between;
     align-items: center;
     border-top: 2px solid white;
     min-height: 80px;
     }
 
+.footer-contacts{
+    display: flex;
+    align-items: center;
+}
+
 .footer-social{
     display: flex;
     list-style: none;
+    margin: 0;
+    padding: 0;
+    /*margin-right: auto;*/
+}
+
+.footer-navigation{
+
 }
 
 .footer-site-navigation{
-    margin: 0 auto;
     display: flex;
     list-style: none;
+    margin-right: 50px;
 }
 
 .footer-site-navigation li{
     margin-right: 20px;
 }
 
-.copyright{
-    /*display: flex;*/
+.footer-site-navigation a{
+    position: relative;
+}
+
+.footer-site-navigation a::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    background-color: white;
+    transition: width 0.35s;
+}
+
+.footer-site-navigation a:hover::before{
+    width: 100%;
+}
+
+.footer-email{
+    margin-right: 20px;
 }
 
 
+.social-button a{
+display: flex;
+    border-radius: 50%;
+}
 
+.social-button a:hover{
+    background-color: white;
+}
+
+.social-button:hover path{
+    fill: #0e0f10;
+}
 
 
 
