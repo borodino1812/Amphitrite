@@ -477,6 +477,36 @@ a, a:visited {
     fill: white;
 }
 
+.modal-close{
+    position: absolute;
+    top: 31px;
+    right: 31px;
+    width: 19px;
+    height: 19px;
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.modal-close:before,
+.modal-close:after{
+    content: "";
+    position: absolute;
+    left: -3px;
+    top: 9px;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+.modal-close:before{
+    transform: rotate(45deg);
+}
+
+.modal-close:after{
+    transform: rotate(-45deg);
+}
+
 .modal::-webkit-scrollbar {
     display: none;
 }
