@@ -139,10 +139,43 @@
         </div>
     </footer>
 
-<!--    <section class="modal-contact-us">-->
-<!--        <h2>Напишите нам!</h2>-->
-<!--        <p>И мы ответим на все ваши вопросы по поводу аудита, редизайна или разработки вашего продукта!</p>-->
-<!--        <span class="modal-close">x</span>-->
-<!--    </section>-->
+    <section class=" modal modal-feedback">
+        <div class="feedback-wrapper">
+            <h2>Напишите нам!</h2>
+            <p class="feedback-description">И мы ответим на все ваши вопросы по поводу аудита, редизайна или разработки вашего продукта!</p>
+            <form class="feedback-form" action="" method="post">
+                <p>
+                    <label class="visually-hidden" for="name">Имя</label>
+                    <input  class="input-field" id="name" name="name" placeholder="Имя" type="text">
+                </p>
+                <p>
+                    <label class="visually-hidden" for="tel">Телефон</label>
+                    <input  class="input-field" id="tel" name="tel" placeholder="Номер телефон" type="tel">
+                </p>
+                <p>
+                    <label class="visually-hidden" for="email">Почта</label>
+                    <input  class="input-field" id="email" name="email" placeholder="Email" type="email">
+                </p>
+                <p>
+                    <label class="visually-hidden" for="commentary">Комментарий</label>
+                    <textarea class="textarea-field" id="commentary" name="commentary" placeholder="Комментарий"></textarea>
+                </p>
+                <p>
+                    <label class="visually-hidden" for="files">Прикрепить файлы</label>
+                    <textarea class="textarea-field" id="files" name="files" placeholder="Прикрепить файлы"></textarea>
+                </p>
+                <div class="checkbox">
+                    <label class="visually-hidden" for="feedback-checkbox">Согласие на обработку данных</label>
+                    <input class="feedback-checkbox" id="feedback-checkbox" type="checkbox">
+                    <span class="checkbox-text">Я согласен с <a href="#">политикой обработки персональных данных</a> и <a href="#">пользовательским соглашением</a></span>
+                    <svg class="check-mark" id="check-mark" width="28" height="28" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M21 6.285l-11.16 12.733-6.84-6.018 1.319-1.49 5.341 4.686 9.865-11.196 1.475 1.285z"/></svg>
+                </div>
+                <button class="button feedback-button">Отправить</button>
+            </form>
+        </div>
+        <span class="modal-close">x</span>
+    </section>
+
 </body>
+
 </html>

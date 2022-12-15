@@ -23,7 +23,7 @@ a, a:visited {
     width: 0;
     height: 2px;
     background-color: white;
-    transition: width 0.35s;
+    transition: width 0.35s ease-in-out;
 }
 
 .site-navigation a:hover::before{
@@ -82,21 +82,26 @@ a, a:visited {
     margin-right: 25px;
 }
 
+.button{
+    font-family: inherit;
+    background-color: #ffffff;
+    border: 0;
+    font-weight: 400;
+    transition: 0.2s ease-in-out;
+}
+
+.button:hover{
+    color: #1c996b;
+    transition: 0.2s ease-in-out;
+}
+
 .header-button{
     min-height: 50px;
     width: 207px;
-    background-color: #ffffff;
     color: #17261e;
     border-radius: 20px;
     font-size: 20px;
     letter-spacing: -0.5px;
-    font-weight: 200;
-    border: 0;
-}
-
-.header-button:hover{
-    color: #1c996b;
-    transition: 0.35s;
 }
 
 .site-controls{
@@ -158,11 +163,12 @@ a, a:visited {
     padding: 40px;
     border-radius: 60px;
     background: linear-gradient(to top, #152022, #0e0f10);
+    transition: 0.25s ease-out;
 }
 
 .services-content:hover{
     box-shadow: 0 0 15px white;
-    transition: 0.25s;
+    transition: 0.25s ease-out;
 }
 
 .services-title{
@@ -205,11 +211,12 @@ a, a:visited {
 .works-item{
     border-radius: 20px;
     background: linear-gradient(-177deg, #152022, #0e0f10);
+    transition: 0.25s ease-out;
 }
 
 .works-item:hover{
     box-shadow: 0 0 10px white;
-    transition: 0.25s;
+    transition: 0.25s ease-out;
 }
 
 .works-item-wrapper{
@@ -305,7 +312,7 @@ a, a:visited {
     left: 0;
     bottom: -5px;
     background-color: white;
-    transition: width 0.35s;
+    transition: width 0.35s ease-out;
 }
 
 .footer-site-navigation a:hover::before{
@@ -317,19 +324,165 @@ a, a:visited {
 }
 
 .social-button a{
-display: flex;
+    display: flex;
     border-radius: 50%;
+    transition: 0.25s ease-out;
 }
 
 .social-button a:hover{
     background-color: white;
+    transition: 0.25s ease-out;
 }
 
 .social-button:hover path{
     fill: #0e0f10;
-    transition: 0.25s;
+    transition: 0.25s ease-out;
 }
 
+.modal{
+    position: fixed;
+    border-radius: 20px;
+    padding: 90px 0;
+    box-shadow: 0 0 20px white;
+    box-sizing: border-box;
+    overflow-y: scroll ;
 
 
+}
+.modal h2{
+    margin: 0  0 30px 0;
+    font-size: 40px;
+    letter-spacing: -1px;
+    font-weight: 400;
+}
+
+.feedback-description{
+    font-size: 14px;
+    letter-spacing: -0.35px;
+    line-height: 22px;
+    font-weight: 400;
+    margin: 0 0 25px 0;
+}
+
+.modal-feedback{
+    background-image: linear-gradient( to top, #152022 , #0f1212 );
+    width: 630px;
+    height: 100vh;
+    top: 0;
+    left: 50%;
+    margin-left: -310px;
+}
+
+.feedback-wrapper{
+    text-align: center;
+    width: 470px;
+    margin: 0 auto;
+}
+
+.feedback-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-form p{
+    margin: 0;
+}
+
+.input-field{
+    font-family: inherit;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    background-color: white;
+    margin: 0 0 25px 0;
+    padding: 15px;
+    box-sizing: border-box;
+    border: none;
+}
+
+.input-field:focus{
+    outline: none;
+}
+
+.textarea-field{
+    font-family: inherit;
+    width: 100%;
+    height: 100px;
+    border-radius: 20px;
+    background-color: white;
+    margin: 0 0 25px 0;
+    padding: 15px;
+    box-sizing: border-box;
+    border: none;
+    resize: none;
+}
+
+.textarea-field:focus{
+    outline: none;
+}
+
+.feedback-button{
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 18px;
+    letter-spacing: -0.45px;
+}
+
+.checkbox{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 25px;
+}
+
+.checkbox-text{
+    margin-left: 15px;
+    font-size: 12px;
+    letter-spacing: -0.3px;
+    text-align: left;
+}
+
+.checkbox a{
+    text-decoration: violet underline;
+    color: violet;
+}
+
+.feedback-checkbox{
+    position: relative;
+    z-index: 1;
+    appearance: none;
+    background-color: white;
+    height: 26px;
+    width: 26px;
+    border-radius: 5px;
+    margin:0;
+    flex-shrink: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.feedback-checkbox:checked{
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
+}
+
+.check-mark{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.check-mark path{
+    fill: white;
+}
+
+.modal::-webkit-scrollbar {
+    display: none;
+}
+
+.modal {
+    -ms-overflow-style: none;  /* IE и Edge */
+    scrollbar-width: none;  /* Firefox */
+}
 
