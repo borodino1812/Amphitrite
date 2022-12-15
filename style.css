@@ -366,16 +366,16 @@ a, a:visited {
 
 .modal-feedback{
     background-image: linear-gradient( to top, #152022 , #0f1212 );
-    width: 630px;
+    width: 530px;
     height: 100vh;
     top: 0;
     left: 50%;
-    margin-left: -310px;
+    margin-left: -265px;
 }
 
 .feedback-wrapper{
     text-align: center;
-    width: 470px;
+    width: 400px;
     margin: 0 auto;
 }
 
@@ -394,7 +394,7 @@ a, a:visited {
     height: 50px;
     border-radius: 20px;
     background-color: white;
-    margin: 0 0 25px 0;
+    margin: 0 0 20px 0;
     padding: 15px;
     box-sizing: border-box;
     border: none;
@@ -410,7 +410,7 @@ a, a:visited {
     height: 100px;
     border-radius: 20px;
     background-color: white;
-    margin: 0 0 25px 0;
+    margin: 0 0 20px 0;
     padding: 15px;
     box-sizing: border-box;
     border: none;
@@ -434,7 +434,7 @@ a, a:visited {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .checkbox-text{
