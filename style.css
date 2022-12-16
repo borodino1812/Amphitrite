@@ -349,8 +349,14 @@ a, a:visited {
     backdrop-filter: blur(5px);
 }
 
+@keyframes bounce {
+    0%{transform: translateY(2000px)}
+    100%{transform: translateY(0px)}
+}
+
 .modal-show{
     display: block;
+    animation: bounce 1s;
 }
 
 .modal {
