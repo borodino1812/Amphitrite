@@ -139,6 +139,7 @@
         </div>
     </footer>
 
+    <div class="modal-overlay">
     <section class=" modal modal-feedback">
         <div class="feedback-wrapper">
             <h2>Напишите нам!</h2>
@@ -175,7 +176,23 @@
         </div>
         <button class="modal-close" type="button"><span class="visually-hidden">Заказать</span></button>
     </section>
+    </div>
 
+<script>
+    let popup=document.querySelector(".modal-overlay");
+    let close=document.querySelector(".modal-close");
+    let button=document.querySelector(".header-button");
+
+    button.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("modal-show");
+    });
+
+    close.addEventListener("click",function (evt){
+        evt.preventDefault();
+        popup.classList.remove("modal-show");
+    });
+</script>
 </body>
 
 </html>

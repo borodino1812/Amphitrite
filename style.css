@@ -88,6 +88,7 @@ a, a:visited {
     border: 0;
     font-weight: 400;
     transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 .button:hover{
@@ -339,16 +340,43 @@ a, a:visited {
     transition: 0.25s ease-out;
 }
 
-.modal{
+.modal-overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+}
+
+.modal-show{
+    display: block;
+}
+
+.modal {
     position: fixed;
     border-radius: 20px;
     padding: 90px 0;
     box-shadow: 0 0 20px white;
     box-sizing: border-box;
-    overflow-y: scroll ;
-
-
+    overflow-y: scroll;
 }
+
+.modal-feedback{
+    background-image: linear-gradient( to top, #152022 , #0f1212 );
+    width: 530px;
+    height: 96%;
+    top: 2%;
+    left: 50%;
+    margin-left: -265px;
+}
+
+.feedback-wrapper{
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+}
+
 .modal h2{
     margin: 0  0 30px 0;
     font-size: 40px;
@@ -364,28 +392,13 @@ a, a:visited {
     margin: 0 0 25px 0;
 }
 
-.modal-feedback{
-    background-image: linear-gradient( to top, #152022 , #0f1212 );
-    width: 530px;
-    height: 100vh;
-    top: 0;
-    left: 50%;
-    margin-left: -265px;
-}
-
-.feedback-wrapper{
-    text-align: center;
-    width: 400px;
-    margin: 0 auto;
-}
-
 .feedback-form{
     display: flex;
     flex-direction: column;
 }
 
 .feedback-form p{
-    margin: 0;
+    margin: 0 0 20px 0;
 }
 
 .input-field{
@@ -394,7 +407,7 @@ a, a:visited {
     height: 50px;
     border-radius: 20px;
     background-color: white;
-    margin: 0 0 20px 0;
+    margin: 0;
     padding: 15px;
     box-sizing: border-box;
     border: none;
@@ -410,7 +423,7 @@ a, a:visited {
     height: 100px;
     border-radius: 20px;
     background-color: white;
-    margin: 0 0 20px 0;
+    margin: 0;
     padding: 15px;
     box-sizing: border-box;
     border: none;
@@ -460,6 +473,7 @@ a, a:visited {
     margin:0;
     flex-shrink: 0;
     transition: 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .feedback-checkbox:checked{
@@ -488,8 +502,8 @@ a, a:visited {
     background-color: transparent;
 }
 
-.modal-close:before,
-.modal-close:after{
+.modal-close::before,
+.modal-close::after{
     content: "";
     position: absolute;
     left: -3px;
@@ -497,14 +511,25 @@ a, a:visited {
     width: 25px;
     height: 3px;
     background-color: white;
+    transition: 0.4s ease-out 0.1s;
 }
 
-.modal-close:before{
+.modal-close::before{
     transform: rotate(45deg);
 }
 
-.modal-close:after{
+.modal-close::after{
     transform: rotate(-45deg);
+}
+
+.modal-close:hover::after{
+    transform: rotate(45deg);
+    transition: 0.4s ease-out 0.1s;
+}
+
+.modal-close:hover::before{
+    transform: rotate(135deg);
+    transition: 0.4s ease-out 0.1s;
 }
 
 .modal::-webkit-scrollbar {
@@ -515,4 +540,3 @@ a, a:visited {
     -ms-overflow-style: none;  /* IE и Edge */
     scrollbar-width: none;  /* Firefox */
 }
-
