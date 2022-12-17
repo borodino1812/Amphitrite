@@ -178,21 +178,24 @@
     </section>
     </div>
 
-<script>
-    let popup=document.querySelector(".modal-overlay");
-    let close=document.querySelector(".modal-close");
-    let button=document.querySelector(".header-button");
+    <script>
+        let body=document.querySelector("body");
+        let popup=document.querySelector(".modal-overlay");
+        let close=document.querySelector(".modal-close");
+        let button=document.querySelector(".header-button");
 
-    button.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.add("modal-show");
-    });
+        button.addEventListener("click", function (evt) {
+            evt.preventDefault();
+            popup.classList.add("modal-show");
+            body.classList.add("scroll-hidden");
+        });
 
-    close.addEventListener("click",function (evt){
-        evt.preventDefault();
-        popup.classList.remove("modal-show");
-    });
-</script>
+        close.addEventListener("click",function (evt){
+            evt.preventDefault();
+            popup.classList.remove("modal-show");
+            body.classList.remove("scroll-hidden");
+        });
+    </script>
 </body>
 
 </html>
