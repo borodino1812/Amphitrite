@@ -216,7 +216,7 @@ a, a:visited {
 }
 
 .works-item:hover{
-    box-shadow: 0 0 10px white;
+    box-shadow: 0 0 15px white;
     transition: 0.25s ease-out;
 }
 
@@ -349,14 +349,13 @@ a, a:visited {
     backdrop-filter: blur(5px);
 }
 
-@keyframes bounce {
+@keyframes appearance{
     0%{transform: translateY(2000px)}
     100%{transform: translateY(0px)}
 }
 
 .modal-show{
     display: block;
-    animation: bounce 1s;
 }
 
 .modal {
@@ -375,6 +374,7 @@ a, a:visited {
     top: 2%;
     left: 50%;
     margin-left: -265px;
+    animation: appearance 1s;
 }
 
 .feedback-wrapper{
