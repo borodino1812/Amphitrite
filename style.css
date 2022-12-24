@@ -33,7 +33,7 @@ a, a:visited {
 .main-header{
     position: relative;
     letter-spacing: -0.5px;
-    background-image: url(img/bgph.png);
+    background-image: url(img/bg.png);
     background-position: center bottom;
     background-size: cover;
     height: 100vh;
