@@ -424,8 +424,8 @@ a, a:visited {
     border: none;
 }
 
-.feedback-form input:focus{
-    outline: 3px #ffccaf solid;
+.form-main input:focus{
+    outline: 4px #184641 solid;
     outline-offset: -3px;
 }
 
@@ -442,8 +442,8 @@ a, a:visited {
     resize: none;
 }
 
-.feedback-form textarea:focus{
-    outline: 3px #ffccaf solid;
+.form-main textarea:focus{
+    outline: 4px #184641 solid;
     outline-offset: -3px;
 }
 
