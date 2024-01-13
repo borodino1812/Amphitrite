@@ -1,3 +1,1 @@
-# AMZZ
-AmNeZZIЯ
-pisun
+# AMPHITRITE
